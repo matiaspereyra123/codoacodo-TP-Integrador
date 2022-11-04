@@ -53,7 +53,7 @@
                                 <a class="nav-link">Conviértete en orador</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-ticket">Comprar tickets</a>
+                                <a class="nav-link nav-ticket" href="#form-ticket">Comprar tickets</a>
                             </li>
                         </ul>
                         </div>
@@ -82,15 +82,13 @@
             <button type="button" class="btn btn-outline btn-orador">Quiero
                 ser orador</button>
 
-            <button type="button" class="btn btn-success btn btn-tickets">Comprar
-                tickets</button>
+            <a href="#form-ticket"><button type="button" class="btn btn-success btn btn-tickets" > Comprar
+                tickets</button></a>
         </section>
         <section class="container-title">
             <p>Conoce a los</p>
             <h2>ORADORES</h2>
         </section>
-  
-
         <section class="container-cards">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -147,6 +145,8 @@
               </div>
         </section>
 
+       
+
         <section class="container-img-honolulu-text">
             <article class="box-img-honolulu">
                 <img src="img/honolulu.jpg">
@@ -183,6 +183,7 @@
                 <input type="text" class="form-control input-lastname"
                     placeholder="Apellido">
             </section>
+     
 
 
 
@@ -195,6 +196,94 @@
             </div>
             <button class="enviar">Enviar</button>
         </form>
+        <section class="container-cards">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card-ticket">
+         
+                    <div class="card-body estudiante">
+                 
+                        <h3>Estudiante</h3>
+                  
+                        <h5> Tienen un descuento</h5>
+                        <p>80%</p>
+                        <p>* presentar documentación</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card-ticket">
+                
+                    <div class="card-body trainee">
+                        <h3>Trainee</h3>
+                        <h5> Tienen un descuento</h5>
+                        <p>50%</p>
+                        <p>* presentar documentación</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card-ticket">
+   
+                    <div class="card-body junior">
+                        <h3>Junior</h3>
+                   <h5> Tienen un descuento</h5>
+                   <p>15%</p>
+                   <p>* presentar documentación</p>
+
+                </div>
+                  </div>
+                </div>
+           
+              </div>
+        </section>
+        <article class="container-title-form">
+            <p>VENTA</p>
+            <h3>VALOR DE TICKET $200</h3>
+        </article>
+        <section>
+            <form class="form" id ="form-ticket">
+
+                <section class="container-inputs">
+                    <input type="text" class="form-control input-name"
+                        placeholder="Nombre">
+                    <input type="text" class="form-control input-lastname"
+                        placeholder="Apellido">
+                </section>
+                <input type="email" class="form-control input-email" id="exampleFormControlInput1" placeholder="name@example.com">
+          
+              
+                <section class="container-inputs">
+                        <article class="input-cantidad">
+                            <p>Cantidad</p>
+     <input type="text" class="form-control" 
+                        placeholder="cantidad" id="input-cantidad" >
+                        </article>
+               
+                        <article class="input-categoria">
+                            <p>Categoria</p>
+      <select class="form-control " id="selectCategoria">
+                            <option value=1>Estudiante</option>
+                            <option value=2>Trainee</option>
+                            <option value=3>Junior</option>
+                       
+                          </select>
+                        </article>
+                  
+                </section>
+                <div class="alert alert-primary" role="alert">
+                    Total a Pagar: $  <label for="" id="totalPagar"></label>
+                  </div>
+                <div class="container-btn-ticket">
+                      <button class="btn-borrar" id="btn-borrar">Borrar</button>      
+                      <button class="btn-resumen" id ="btn-resumen">Resumen</button>
+                </div>
+              
+            </form>
+        </section>
+
  
         <footer>
             <section class="container-footer">
@@ -211,6 +300,7 @@
 
             <footer>
             </main>
+            <script src="js/ticket.js"></script>
         </body>
 
     </html>

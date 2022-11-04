@@ -73,6 +73,25 @@ text-align: center;
     margin:auto;
     margin-top:20px;
 }
+.card-ticket{
+    border:0px;
+    text-align: center;
+    margin-top:20px;
+
+}
+.estudiante{
+    border:2px solid #1888FF;
+    padding-top:20px;
+}
+.trainee{
+    border:2px solid #5CBECD;
+    padding-top:20px;
+}
+.junior{
+    border:2px solid #FFCD31;
+    padding-top:20px;
+}
+
 .card-img-top{
     height:100%;
 }
@@ -123,9 +142,9 @@ u{
     width:90%;
 margin:auto;
 }
-.form input{
+/* .form input{
     margin-top: 10px;
-}
+} */
 .textarea{
     margin-top:10px;
 }
@@ -143,8 +162,30 @@ margin:auto;
     background-color: #729731;
 }
 
-
-
+.input-categoria{
+    height: auto;
+margin-top: auto;
+}
+.alert-primary{
+    margin-top:20px;
+    
+}
+.alert-price{
+    display: inline-block;
+}
+.btn-borrar,.btn-resumen{
+    height:40px;
+    border-radius: 5px;
+    border:none;
+    width:100%;
+    color:#fff;
+    background-color: #96C93E;
+    margin-top: 20px;
+    transition: background-color 1s;
+}
+.btn-borrar:hover,.btn-resumen:hover{
+    background-color: #729731;
+}
 
 .container-footer{
     margin-top:20px;
@@ -168,9 +209,18 @@ footer article{
 .container-footer a{
     text-decoration:none;
     color:#fff;
-
-
 }
+.input-cantidad p,.input-categoria p{
+    padding-top:10px;
+  margin-bottom: 4px;
+  
+}
+.input-name, .input-lastname,.input-email{
+    margin-top:14px;
+}
+
+
+
 @media (min-width: 768px) { 
     .card{
         height:100%;
@@ -181,6 +231,7 @@ footer article{
     .steve{
         height:100%;
     }
+ 
 }
 
  @media (max-width: 991px) {
@@ -196,6 +247,7 @@ footer article{
     footer article{
         margin-top:20px;
     }
+
   }
 
   @media (min-width: 992px) { 
@@ -275,13 +327,23 @@ footer article{
     .form{
         width:50%;
     }
-    .container-inputs{
+    .container-inputs,.container-btn-ticket{
         display:flex;
         justify-content:space-between;
     }
+ 
+ 
     .input-name, .input-lastname{
        width:49%;
     }
+    .input-cantidad, .input-categoria{
+        
+            width: 49%;
+    }
+    .btn-borrar, .btn-resumen{
+        width:49%;
+    }
+
   .container-footer{
     padding-left:100px;
     padding-right: 100px;

@@ -258,8 +258,8 @@
                 <section class="container-inputs">
                         <article class="input-cantidad">
                             <p>Cantidad</p>
-     <input type="text" class="form-control" 
-                        placeholder="cantidad" id="input-cantidad" >
+     <input type="number" class="form-control" 
+                        placeholder="cantidad" id="input-cantidad" min="1" pattern="^[0-9]+">
                         </article>
                
                         <article class="input-categoria">
@@ -273,8 +273,8 @@
                         </article>
                   
                 </section>
-                <div class="alert alert-primary" role="alert">
-                    Total a Pagar: $  <label for="" id="totalPagar"></label>
+                <div class="alert alert-primary" role="alert" id="alert">
+                   <label id="msg-pagar">Total a Pagar: $ </label>  <label for="" id="totalPagar"></label>
                   </div>
                 <div class="container-btn-ticket">
                       <button class="btn-borrar" id="btn-borrar">Borrar</button>      
